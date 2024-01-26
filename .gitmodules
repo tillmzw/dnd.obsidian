@@ -1,0 +1,13 @@
+[submodule "vault"]
+	path = vault
+	url = https://github.com/ObsidianTTRPGProject/ObsidianTTRPGVault
+	shallow = true
+[submodule "tools/ttrpg-convert-cli"]
+	path = tools/ttrpg-convert-cli
+	url = https://github.com/ebullient/ttrpg-convert-cli.git
+	shallow = true
+[submodule "tools/5etools-mirror"]
+	path = tools/5etools-mirror
+	url = https://github.com/5etools-mirror-1/5etools-mirror-1.github.io.git
+	shallow = true
+
