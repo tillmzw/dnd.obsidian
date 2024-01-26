@@ -3,7 +3,8 @@
 		"DMG",
 		"PHB",
 		"LMoP",
-		"MM"
+		"MM",
+		"RitC"
 	],
 	"paths": {
 		"compendium": ".",

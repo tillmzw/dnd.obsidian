@@ -6,6 +6,7 @@ declare -r SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/nul
 declare -r TTRPG_VERSION="2.2.17"
 declare -r ARCH="linux-x86_64"
 declare -r SOURCE_INPUT="${SCRIPT_DIR}/5etools-mirror/data"
+declare -r HOMEBREW_INPUT="${SCRIPT_DIR}/homebrew"
 declare -r CONVERT_BIN="${SCRIPT_DIR}/bin/ttrpg-convert-cli-${TTRPG_VERSION}-${ARCH}/bin/ttrpg-convert"
 declare -r CONVERT_OUTPUT="${SCRIPT_DIR}/../vault/3-Mechanics/CLI"
 
@@ -28,6 +29,6 @@ $CONVERT_BIN --version || error "can't run ttrpg-convert-cli"
 		--config="${SCRIPT_DIR}/ttrpg-config.json" \
 		--game=5e \
 		-o="${CONVERT_OUTPUT}" \
-		"${SOURCE_INPUT}"
+		"${SOURCE_INPUT}" "${HOMEBREW_INPUT}"
 )
 

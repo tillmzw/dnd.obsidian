@@ -1,0 +1,114 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "RatsIntheCellar",
+				"abbreviation": "RitC",
+				"full": "Rats in the Cellar",
+				"authors": [
+					"Marina Kunz",
+					"Florence Mauli",
+					"Kai Müri",
+					"Sven Puister"
+				],
+				"convertedBy": [],
+				"url": "https://www.dmsguild.com/product/458059/The-Rats-in-the-Cellar"
+			}
+		]
+	},
+	"monster": [
+		{
+			"name": "Tshumbla",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"source": "RitC",
+			"alignment": [
+				{
+					"special": "unaligned"
+				}
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"formula": "4d6 + 12",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 20
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 16,
+			"int": 4,
+			"wis": 10,
+			"cha": 4,
+			"passive": 14,
+			"cr": "1/2",
+			"page": 8,
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"languages": [
+				"understands basic commands in any language when trained"
+			],
+			"languageTags": [
+				"X"
+			],
+			"save": {
+				"str": "+2",
+				"dex": "+0",
+				"int": "-3",
+				"cha": "-3",
+				"con": "+3"
+			},
+			"skill": {
+				"athletics": "+4",
+				"perception": "+4"
+			},
+			"resist": [
+				"slashing"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage and the target is {@condition grappled} (escape DC12)."
+					]
+				}
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The tshumbla has advantage on an attack roll against a creature if at least one of the tshumbla's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"environment": [
+				"desert"
+			],
+			"damageTags": [
+				"P"
+			]
+		}
+	]
+}
+
