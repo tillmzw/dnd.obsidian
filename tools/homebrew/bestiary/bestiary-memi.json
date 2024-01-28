@@ -1,0 +1,809 @@
+{
+	"siteVersion": "1.197.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TheMechanicalMirage",
+				"abbreviation": "MechMirage",
+				"full": "The Mechanical Mirage",
+				"url": "https://www.dmsguild.com/product/411260/The-Mechanical-Mirage",
+				"authors": [],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1706477400,
+		"dateLastModified": 1706477400
+	},
+	"monster": [
+		{
+			"name": "Cape of Strangling",
+			"source": "TheMechanicalMirage",
+			"page": 41,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				{
+					"special": "unaligned"
+				}
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "3d10 + 6",
+				"average": 22
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 10,
+			"int": 1,
+			"wis": 3,
+			"cha": 1,
+			"save": {
+				"str": "+2",
+				"dex": "+3",
+				"con": "+0",
+				"int": "-5",
+				"wis": "+4",
+				"cha": "+5"
+			},
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"passive": 6,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Antimagic Susceptibility",
+					"entries": [
+						"The cape is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the cape must succeed on a Constitution saving throw against the caster’s spell save DC or fall unconscious for 1 minute."
+					]
+				},
+				{
+					"name": "Damage Transfer",
+					"entries": [
+						"While it is grappling a creature, the cape takes only half the damage dealt to it, and the creature {@condition grappled} by the cape takes the other half."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the cape remains motionless, it is indistinguishable from a normal cape."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Strangle",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one medium or smaller creature. {@h}The creature is {@condition grappled} (escape {@dc 12}). Until this grapple ends, the target is {@condition restrained}, suffocating, and the cape can’t strangle another target. In addition, at the start of each of the target’s turns, the target takes 10 ({@damage 2d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Antimagic Susceptibility",
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		},
+		{
+			"name": "Doaa Shaheen",
+			"source": "TheMechanicalMirage",
+			"page": 41,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"Studded Leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "5d8 + 10",
+				"average": 32
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 14,
+			"int": 13,
+			"wis": 16,
+			"cha": 13,
+			"save": {
+				"con": "+2",
+				"int": "+1",
+				"wis": "+3",
+				"cha": "+1"
+			},
+			"skill": {
+				"medicine": "+7",
+				"persuasion": "+3",
+				"survival": "+5"
+			},
+			"passive": 13,
+			"languages": [
+				"Common"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Dooa is a 5th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks)."
+					],
+					"daily": {
+						"2e": [
+							"{@spell create or destroy water}",
+							"{@spell guiding bolt}",
+							"{@spell healing word}",
+							"{@spell lesser restoration}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"action": [
+				{
+					"name": "Sand Slash",
+					"entries": [
+						"{@atk ms,rs} {@hit 6} to hit, reach 5 ft. or range 120 ft., one target. {@h}13 ({@damage 3d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit +2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Spiritual Sway",
+					"entries": [
+						"When Doaa or a creature she can see within 60ft. of her makes an attack roll or saving throw she can roll a {@dice d6} and decide whether to add or substract the number from the result of the roll."
+					]
+				}
+			],
+			"attachedItems": [
+				"quarterstaff|phb"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Immaculator",
+			"source": "TheMechanicalMirage",
+			"page": 42,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				{
+					"special": "unaligned"
+				}
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 40",
+				"average": 95
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 8,
+			"wis": 10,
+			"cha": 4,
+			"save": {
+				"str": "+7",
+				"dex": "+4",
+				"con": "+7",
+				"int": "-1",
+				"wis": "+0",
+				"cha": "-3"
+			},
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				{
+					"special": "Slashing from Nonmagical Attacks that aren’t Adamantine"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"stunned"
+			],
+			"languages": [
+				"Understands commands given in any language but can’t speak"
+			],
+			"cr": "6",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The immaculator makes three attacks. One with its bite and two slam attacks."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 4}) piercing damage plus 7 ({@damage 2d6}) lightning damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}11 ({@damage 1d12 + 4}) bludgeoning damage"
+					]
+				},
+				{
+					"name": "Rearrange",
+					"entries": [
+						"(Recharge 6). The immaculator spins its whole body while standing on one leg, rearranging all creatures within reach violently. Every creature within 5 feet of the Immaculator must succeed on a {@dc 12} dexterity saving throw, taking 11 ({@damage 1d12 + 4}) bludgeoning damage on a failed save, or half as much damage on a successful one. The immaculator can place all creatures that failed the save in a new unoccupied space within 5 feet of it."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Reinforce",
+					"entries": [
+						"Immediately after an attack the immaculator can grant itself {@dice 1d6} temporary hitpoints."
+					]
+				}
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			],
+			"fluff": {
+				"entries": [
+					"The immaculator cannot function on its own. It needs a pilot that steers it. The pilot is completely protected from damage while inside the immaculator. This works like a tiny hut spell. ",
+					"The immaculator can be entered using an action, if it is unmanned. If the immaculator is destroyed, the creature in the cockpit gets teleported to a free space within 5ft. of the immaculator. As long as the creature is inside the cockpit it uses the immaculator’s statistics and can’t use any of its own statistics. It can exit the immaculator using an action."
+				]
+			}
+		},
+		{
+			"name": "Makka Mirkat",
+			"source": "TheMechanicalMirage",
+			"page": 40,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Studded Leather"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 10",
+				"average": 37
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 14,
+			"int": 14,
+			"wis": 11,
+			"cha": 14,
+			"save": {
+				"str": "+2",
+				"dex": "+4",
+				"con": "+2",
+				"int": "+2",
+				"wis": "+0",
+				"cha": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"Makka has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+					]
+				},
+				{
+					"name": "Sand Camouflage",
+					"entries": [
+						"Makka has advantage on Dexterity (Stealth) checks made to hide in sandy terrain."
+					]
+				},
+				{
+					"name": "1/day: Rally the Ranks",
+					"entries": [
+						"Makka calls out to her companions. She can choose up to three creatures within 60 feet of her that are allied with her. Each one regains {@dice 1d8} hit points, provided that the creature can see or hear her."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Makka makes three melee attacks with her scimitar, or two ranged attacks with her throwing knife."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Poisoned Throwing Knife",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 1 poison damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Blinding Buckler",
+					"entries": [
+						"As a reaction immediately after being hit by an attack, Makka can cause the attacker to be {@condition blinded} until the end of the attacker’s next turn, unless the attacker succeeds on a {@dc 12} Constitution saving throw."
+					]
+				}
+			],
+			"attachedItems": [
+				"scimitar|phb"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Mirkat Warrior",
+			"source": "TheMechanicalMirage",
+			"page": 40,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				{
+					"special": "any alignment"
+				}
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"Leather Armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"save": {
+				"str": "+1",
+				"dex": "+4",
+				"con": "+1",
+				"int": "+0",
+				"wis": "+1",
+				"cha": "+1"
+			},
+			"skill": {
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"The mirkat warrior has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+					]
+				},
+				{
+					"name": "Sand Camouflage",
+					"entries": [
+						"The mirkat warrior has advantage on Dexterity ({@skill Stealth}) checks made to hide in sandy terrain."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The scout makes two melee attacks or two ranged attacks."
+					]
+				},
+				{
+					"name": "Scimitar",
+					"entries": [
+						"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Poisoned Throwing Knife",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 30 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 1 poison damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"scimitar|phb"
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			]
+		},
+		{
+			"name": "Nihidrone",
+			"source": "TheMechanicalMirage",
+			"page": 43,
+			"size": [
+				"M"
+			],
+			"type": "construct",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 40
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 12,
+			"int": 18,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"str": "+2",
+				"con": "+1",
+				"int": "-4",
+				"wis": "+0",
+				"cha": "+1",
+				"dex": "+3"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Modron",
+				"Common"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Immaculate",
+					"entries": [
+						"The nihidrone can’t be compelled to act in a way that contradicts its vision of an orderly world."
+					]
+				},
+				{
+					"name": "Disintegration",
+					"entries": [
+						"If the nihidrone dies, its body disintegrates into dust, leaving behind its weapons and anything else it was carrying."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The nihidrone makes two attacks with its arms. Then it shoots its laser monocle. It doesn’t get disdvantage for shooting its monocle within 5 feet of a hostile creature."
+					]
+				},
+				{
+					"name": "Arm",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Laser Monocle",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 30/90 ft., one target. {@h}17 ({@damage 2d12 + 4}) radiant damage."
+					]
+				},
+				{
+					"name": "Paralysis Gas",
+					"entries": [
+						"(Recharge 6) The nihidrone exhales a 30-foot cone of gas. Each creature in that area must succeed on a {@dc 15} Constitution saving throw or be {@condition paralyzed} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The nihidrone can take 2 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The nihidrone regains spent legendary actions at the start of his turn."
+			],
+			"legendary": [
+				{
+					"name": "Mortifying Verdict",
+					"entries": [
+						"The Nihidrone turns its destructive gaze on a creature it can see within 60 feet of it. The target must succeed on a {@dc 15} Charisma saving throw or be {@condition stunned} until the end of its next turn."
+					]
+				},
+				{
+					"name": "Flutterflight",
+					"entries": [
+						"The nihidrone moves up to his speed without provoking opportunity attacks."
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"stunned"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
+			]
+		},
+		{
+			"name": "Sandakath",
+			"source": "TheMechanicalMirage",
+			"page": 39,
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "4d6 + 4",
+				"average": 18
+			},
+			"speed": {
+				"walk": 10,
+				"burrow": 40
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"save": {
+				"dex": "+3",
+				"con": "+2",
+				"int": "-4",
+				"wis": "+1",
+				"cha": "+2"
+			},
+			"passive": 11,
+			"languages": [
+				"Abyssal"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Slashing Charge",
+					"entries": [
+						"If the sandakath moves at least 20 feet straight toward a target and then hits it with a cut attack on the same turn, the target takes an extra 2 ({@damage 1d4}) slashing damage and the sandakath doesn’t provoke opportunity attacks for the rest of its turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Cut",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"desert"
+			],
+			"languageTags": [
+				"AB"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}

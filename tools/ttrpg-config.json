@@ -4,7 +4,11 @@
 		"PHB",
 		"LMoP",
 		"MM",
-		"RitC"
+		"MPMM",
+		"XGE",
+		"TCE",
+		"RatsCellar",
+		"MechMirage"
 	],
 	"paths": {
 		"compendium": ".",
@@ -22,7 +26,10 @@
 		"book": [
 		  "PHB",
 		  "DMG",
-		  "MM"
+		  "MM",
+		  "MPMM",
+		  "XGE",
+		  "TCE"
 		]
 	}
 }

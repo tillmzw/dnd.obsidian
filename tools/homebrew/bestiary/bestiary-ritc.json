@@ -1,29 +1,28 @@
 {
+	"siteVersion": "1.197.0",
 	"_meta": {
 		"sources": [
 			{
-				"json": "RatsIntheCellar",
-				"abbreviation": "RitC",
+				"json": "RatsintheCellar",
+				"abbreviation": "RatsCellar",
 				"full": "Rats in the Cellar",
-				"authors": [
-					"Marina Kunz",
-					"Florence Mauli",
-					"Kai Müri",
-					"Sven Puister"
-				],
-				"convertedBy": [],
-				"url": "https://www.dmsguild.com/product/458059/The-Rats-in-the-Cellar"
+				"url": "https://www.dmsguild.com/product/458059/The-Rats-in-the-Cellar",
+				"authors": [],
+				"convertedBy": []
 			}
-		]
+		],
+		"dateAdded": 1706477391,
+		"dateLastModified": 1706477391
 	},
 	"monster": [
 		{
 			"name": "Tshumbla",
+			"source": "RatsintheCellar",
+			"page": 8,
 			"size": [
 				"M"
 			],
 			"type": "monstrosity",
-			"source": "RitC",
 			"alignment": [
 				{
 					"special": "unaligned"
@@ -46,23 +45,6 @@
 			"int": 4,
 			"wis": 10,
 			"cha": 4,
-			"passive": 14,
-			"cr": "1/2",
-			"page": 8,
-			"senses": [
-				"darkvision 60 ft.",
-				"tremorsense 30 ft."
-			],
-			"senseTags": [
-				"D",
-				"T"
-			],
-			"languages": [
-				"understands basic commands in any language when trained"
-			],
-			"languageTags": [
-				"X"
-			],
 			"save": {
 				"str": "+2",
 				"dex": "+0",
@@ -74,8 +56,25 @@
 				"athletics": "+4",
 				"perception": "+4"
 			},
+			"senses": [
+				"darkvision 60 ft.",
+				"tremorsense 30 ft."
+			],
+			"passive": 14,
 			"resist": [
 				"slashing"
+			],
+			"languages": [
+				"understands basic commands in any language when trained"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The tshumbla has advantage on an attack roll against a creature if at least one of the tshumbla's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
 			],
 			"action": [
 				{
@@ -85,30 +84,28 @@
 					]
 				}
 			],
-			"conditionInflict": [
-				"grappled"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"trait": [
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"The tshumbla has advantage on an attack roll against a creature if at least one of the tshumbla's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
-					]
-				}
+			"environment": [
+				"desert"
 			],
 			"traitTags": [
 				"Pack Tactics"
 			],
-			"environment": [
-				"desert"
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"languageTags": [
+				"X"
 			],
 			"damageTags": [
 				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
 			]
 		}
 	]
 }
-
