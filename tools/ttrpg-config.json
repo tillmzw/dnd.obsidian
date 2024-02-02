@@ -7,6 +7,7 @@
 		"MPMM",
 		"XGE",
 		"TCE",
+		"FTD",
 		"RatsCellar",
 		"MechMirage"
 	],
@@ -29,7 +30,8 @@
 		  "MM",
 		  "MPMM",
 		  "XGE",
-		  "TCE"
+		  "TCE",
+		  "FTD"
 		]
 	}
 }
