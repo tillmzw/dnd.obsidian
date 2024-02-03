@@ -8,7 +8,7 @@ declare -r ARCH="linux-x86_64"
 declare -r SOURCE_INPUT="${SCRIPT_DIR}/5etools-mirror/data"
 declare -r HOMEBREW_INPUT="${SCRIPT_DIR}/homebrew"
 declare -r CONVERT_BIN="${SCRIPT_DIR}/bin/ttrpg-convert-cli-${TTRPG_VERSION}-${ARCH}/bin/ttrpg-convert"
-declare -r CONVERT_OUTPUT="${SCRIPT_DIR}/../vault/3-Mechanics/CLI"
+declare -r CONVERT_OUTPUT="${SCRIPT_DIR}/../vault/Mechanics/Generated"
 
 function error {
 	echo "$@"
