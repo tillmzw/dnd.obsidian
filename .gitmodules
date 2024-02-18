@@ -1,6 +1,6 @@
 [submodule "vault"]
 	path = vault
-	url = https://github.com/ObsidianTTRPGProject/ObsidianTTRPGVault
+	url = https://github.com/tillmzw/vault.git
 	shallow = true
 [submodule "tools/ttrpg-convert-cli"]
 	path = tools/ttrpg-convert-cli
