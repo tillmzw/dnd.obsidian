@@ -1,3 +1,10 @@
-This directory contains the tooling required to populate an obsidian vault with 5etools data, following templates and instructions from [ObsidianTTRPGProject](https://github.com/ObsidianTTRPGProject/ObsidianTTRPGVault/).
+# Import 5E data into Obsidian
 
-You should only need to use `./convert.sh`.
+Running `./convert.sh` will run `ttrpg-convert` on the `5etools-mirro` repository (both submodules) following the configuration file.
+
+The configuration file includes a few sources that will be included in the generation, incl. some homebrew content.
+
+The generated data will be placed into `../vault/Mechanics/Generated` and should be automatically indexed by Obsidian.
+
+This setup is based on instructions from the [ObsidianTTRPGProject](https://github.com/ObsidianTTRPGProject/ObsidianTTRPGVault/).
+
