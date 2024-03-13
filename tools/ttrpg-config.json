@@ -8,8 +8,7 @@
 		"XGE",
 		"TCE",
 		"FTD",
-		"RatsCellar",
-		"MechMirage"
+		"ERlW"
 	],
 	"paths": {
 		"compendium": ".",
@@ -31,7 +30,8 @@
 		  "MPMM",
 		  "XGE",
 		  "TCE",
-		  "FTD"
+		  "FTD",
+		  "ERlW"
 		]
 	}
 }
