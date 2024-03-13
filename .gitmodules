@@ -2,6 +2,7 @@
 	path = vault
 	url = https://github.com/tillmzw/vault.git
 	shallow = true
+	branch = template
 [submodule "tools/ttrpg-convert-cli"]
 	path = tools/ttrpg-convert-cli
 	url = https://github.com/ebullient/ttrpg-convert-cli.git
